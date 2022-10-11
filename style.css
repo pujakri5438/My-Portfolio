@@ -1,0 +1,589 @@
+/*__________________#DEFAULTS#__________________*/
+
+/*
+html{
+   scroll-behavior: smooth;
+}
+*/
+
+@import url('https://fonts.google.com/share selection.family=Poppins:wght@200%7CUbuntu');
+
+html{
+  scroll-behavior: smooth;  
+}
+
+nav,
+header,
+footer{
+    display: block;
+}
+
+body{
+    overflow-x: hidden;
+    line-height: 1;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear:both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+/*
+.about,
+.education,
+.skill,
+.contact{
+    height: 100vh;
+    min-height: 500px;
+}
+*/
+
+/*--------------#NAV BAR#-------------------*/
+
+nav{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.list li{
+    list-style: none;
+    float: left;
+}
+
+ul.list li a{
+    display: block;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 40px;
+    
+}
+
+ul.list li.dropdownIcon{
+    display: none;
+}
+
+ul.list li a:hover{
+    background-color: #C21010;
+}
+
+/*------------------#HOME#---------------------------*/
+
+.home{
+    background: url("portfolio-background.webp") no-repeat center;
+    background-size:cover;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+.home .home-content .text1{
+    color: white;
+    font-size: 25px;
+    margin: 100px 5px 5px 5px;
+}
+
+.home .home-content .text2{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin: 18px 0px 20px 0px;
+}
+
+.home .home-content .text3{
+    color: white;
+    font-size: 35px;
+/*    margin-top: 5px;*/
+}
+
+.home .home-content .text3 span{
+    color: crimson;
+    font-weight: 500;
+    margin: 15px;
+}
+
+.col-8{
+    padding: 10%;
+}
+
+.home .home-content .btn{
+    color: white;
+    background: crimson;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    
+}
+
+
+.home .home-content .btn:hover{
+    background: none;
+    color: crimson;
+}
+
+/*---------------------#ABOUT#---------------------*/
+
+
+.sec-2-heading h1{
+    text-align: center;
+    margin: 100px 50px 50px 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+img{
+    margin: 50px 50px 50px 200px;
+    border-radius: 6px;
+}
+
+.col-7 .text{
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.col-7 .text span{
+    color: crimson;
+}
+
+.col-7 ul{
+    margin-left: 50px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.col-7 a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 50px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+}
+
+.col-7 a:hover{
+    background: none;
+    color: crimson;
+}
+
+/*--------------------#EDUCATION#----------------------*/
+
+.education{
+    background: black;
+}
+
+.sec-3-heading h1{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+div.box1{
+    color: white;
+    padding: 10px;
+    margin: 30px 30px 150px 30px;
+    background-color: #0F0E0E;
+    border-radius: 7px;
+    box-shadow: rgb(105,105,105);
+}
+
+div.box1:hover{
+    background-color: crimson;
+    transform: scale(1.05);
+}
+
+.col-4 .box1 h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.col-4 .box1 ul{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+/*---------------------#SKILLS#_______________________*/
+
+.col-6{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.sec-4-heading h1{
+    text-align: center;
+    margin: 100px 50px 0px 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.col-6 .col-left{
+    margin: 20px 20px 20px 100px;
+    padding: 30px;
+}
+
+.col-left p{
+    line-height: 20px;
+    font-weight: 50;
+    margin-bottom: 40px;
+}
+
+.col-left a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+}
+
+.col-left a:hover{
+    background: none;
+    color: crimson;
+}
+
+.col-6 .col-right{
+    margin: 20px 100px 20px 20px;
+    padding: 30px;
+}
+
+.col-right .bars{
+     margin-bottom: 15px;
+}
+
+.col-right .info{
+     display: flex;
+     margin-bottom: 5px;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.col-right span{
+     font-weight: 500;
+     font-size: 18px;
+}
+
+.col-right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.col-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.col-right .html::before{
+    width: 90%;
+}
+
+.col-right .css::before{
+    width: 60%;
+}
+
+.col-right .js::before{
+    width: 30%;
+}
+
+.col-right .c::before{
+    width: 70%;
+}
+
+.col-right .java::before{
+    width: 80%;
+}
+
+.col-right .mysql::before{
+    width: 40%;
+}
+
+/*--------------------#CONTACT#____________________*/
+
+.contact{
+    color: white;
+    background: black;
+}
+
+.sec-5-heading h1{
+    text-align: center;
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.col-6 .col-l{
+    margin: 10px 20px 20px 100px;
+    padding: 30px;
+}
+
+.col-l h2, .col-r h2{
+    font-weight: 300;
+}
+.col-l p{
+    text-align: justify;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.col-6 .col-l .icons{
+    text-align: left;
+    margin: 10px 0;
+}
+
+#row1 img {
+    margin: 10px 10px 10px 0;
+}
+
+#row2 img {
+    margin: 10px 10px 10px 0;
+}
+
+#row3 img {
+    margin: 10px 10px 10px 0;
+}
+
+.col-l .icons .info{
+    margin: 10px;
+    font-size: 13px;
+}
+
+.col-6 .col-r{
+    margin: 10px 100px 20px 20px;
+    padding: 30px;
+}
+
+.col-r form .field,
+.col-r form .fields .field{
+    height: 35px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+}
+
+.col-r form .textarea{
+    height: 70px;
+    width: 90%;
+}
+
+.col-r form .field input,
+.col-r form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.col-r form .button-area{
+  display: flex;
+  align-items: center;
+}
+.col-r form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.col-r form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+
+/*-------------------- #footer#--------------------*/
+
+.footer .text{
+    text-align: center;
+}
+
+.footer .text a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.footer .text a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*---------------------#Mobile#--------------------*/
+
+@media screen and (max-width: 680px){
+    
+    nav{
+        position: sticky;
+    }
+    
+    ul.list li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    ul.list li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    
+    ul.list.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.list.responsive{
+        position: relative;
+        background-color: black;
+    }
+    
+    ul.list.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.list.responsive li a{
+        display: block;
+        text-align: center;
+    }
+    
+    ul.list.responsive li a:hover{
+        background-color: crimson;
+    }
+    
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .home .home-content .text1{
+        padding: 50px 0px 0px 0px;
+        margin: 20px 5px 5px 5px;
+    }
+    
+    .home .home-content .text2{
+        font-size: 50px;
+    }
+    
+    .home .home-content .btn{
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    img{
+        margin: 50px 50px 50px 125px;
+    }
+    
+    .col-7 .btn2 a{
+        margin-bottom: 50px;
+    }
+    
+    .col-7 .text{
+        font-size: 20px;
+    }
+    
+    .col-4 .box1{
+        margin-bottom: 35px;
+    }
+    
+    .col-6 .col-left,
+    .col-6 .col-l{
+        margin: 10px;
+    }
+    
+    .col-6 .col-right,
+    .col-6 .col-r{
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
