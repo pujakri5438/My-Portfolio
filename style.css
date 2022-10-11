@@ -477,6 +477,12 @@ div.box1:hover{
 /*---------------------#Mobile#--------------------*/
 
 @media screen and (max-width: 680px){
+   
+   .education,
+.contact{
+    height: 100vh;
+    min-height: 1000px;
+}
     
     nav{
         position: sticky;
