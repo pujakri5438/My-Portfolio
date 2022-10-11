@@ -483,6 +483,10 @@ div.box1:hover{
     height: 100vh;
     min-height: 1000px;
 }
+   
+   body{
+      overflow-x: hidden;
+   }
     
     nav{
         position: sticky;
