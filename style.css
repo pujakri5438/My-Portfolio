@@ -52,13 +52,13 @@ body{
 .col-12{width: 100%;}
 
 
-.about,
+/* .about,
 .education,
 .skill,
 .contact{
     height: 100vh;
     min-height: 500px;
-}
+} */
 
 
 /*--------------#NAV BAR#-------------------*/
